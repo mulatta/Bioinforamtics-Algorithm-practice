@@ -5,7 +5,7 @@
 
 
 ## 목차
-### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/)
+### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/Chapter%201.md)
 ---
 #### 본문
  [1A. 단어 세기](/Bioinforamtics-Algorithm-practice/Chapter%201/1A.%20PatternCount.ipynb)
