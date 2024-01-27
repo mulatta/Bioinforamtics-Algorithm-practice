@@ -20,7 +20,7 @@
  - [1F. 최소 비대칭 문제](./1F.%20MinimizeSkew.ipynb)
  - [1G. 해밍 거리 문제](./1G.%20HammingDistance.ipynb)
  - [1I. 대략적인 패턴 일치 문제](./1H.%20NäivePatternMatiching.ipynb)
-    - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./1I-Ex.%20ApproximatePatternCount.ipynb)
+     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./1I-Ex.%20ApproximatePatternCount.ipynb)
  - [1J. 미스매치와 역상보의 빈번한 단어 문제](./1J.%20MostFrequentPseudoPatternwithComplements.ipynb)
 
 #### 충전소
