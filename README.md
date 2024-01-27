@@ -14,30 +14,30 @@
  - **step-by-step**: 각 *Chapter page*의 내용을 따라가면서 코드를 확인하실 것을 권장드립니다.
  - **Only Codes**: 목차-본문/충전소의 각 코드만 따라가시면 됩니다.
  ### Another Issues
- - 본문이나 코드 내용 상의 오류에 대한 문의는 [Issues](https://github.com/mulatta/Bioinforamtics-Algorithm-practice/issues) 페이지를 이용 부탁드립니다.
+ - 본문이나 코드 내용 상의 오류에 대한 문의는 [Issues](https://github.com/mulatta./issues) 페이지를 이용 부탁드립니다.
  - 개별적인 contact은 [메인 페이지](https://github.com/mulatta/mulatta)를 확인 부탁드립니다.
 
 ## 목차
  ### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/Chapter%201.md)
  ---
  #### 본문
-- [1A. 단어 세기](/Bioinforamtics-Algorithm-practice/Chapter%201/1A.%20PatternCount.ipynb)
+- [1A. 단어 세기](./Chapter%201/1A.%20PatternCount.ipynb)
  
-- [1B. 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1B.%20FrequentWords.ipynb)
+- [1B. 빈번한 단어 문제](./Chapter%201/1B.%20FrequentWords.ipynb)
  
-- [1C. 역상보 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1C.%20ReverseComplement.ipynb)
+- [1C. 역상보 문제](./Chapter%201/1C.%20ReverseComplement.ipynb)
  
-- [1D. 패턴 일치 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1D.%20PatternOccurrence.ipynb)
+- [1D. 패턴 일치 문제](./Chapter%201/1D.%20PatternOccurrence.ipynb)
  
-- [1E. 군집 찾기 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1E.%20FindClumps.ipynb)
+- [1E. 군집 찾기 문제](./Chapter%201/1E.%20FindClumps.ipynb)
  
-- [1F. 최소 비대칭 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1F.%20MinimizeSkew.ipynb)
+- [1F. 최소 비대칭 문제](./Chapter%201/1F.%20MinimizeSkew.ipynb)
  
-- [1G. 해밍 거리 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1G.%20HammingDistance.ipynb)
+- [1G. 해밍 거리 문제](./Chapter%201/1G.%20HammingDistance.ipynb)
  
-- [1I. 대략적인 패턴 일치 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1H.%20NäivePatternMatiching.ipynb)
-    - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](/Bioinforamtics-Algorithm-practice/Chapter%201/1I-Ex.%20ApproximatePatternCount.ipynb)
+- [1I. 대략적인 패턴 일치 문제](./Chapter%201/1H.%20NäivePatternMatiching.ipynb)
+    - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/1I-Ex.%20ApproximatePatternCount.ipynb)
  
-- [1J. 미스매치와 역상보의 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/1J.%20MostFrequentPseudoPatternwithComplements.ipynb)
+- [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/1J.%20MostFrequentPseudoPatternwithComplements.ipynb)
  
  #### 충전소
