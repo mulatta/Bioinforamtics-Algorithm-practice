@@ -42,7 +42,9 @@
 ### DnaA box
 앞서 설명한 바와 같이, 유전체는 복제가 시작되기 위해 이중 나선을 풀어주는 과정이 필요하다. 따라서, *ori*라는 영역에는 이중 나선을 풀어주는 단백질이 결합하는 DNA 영역이 존재한다. 이 과정에 관여하는 단백질과 DNA 서열 쌍을 DnaA protein - DnaA box(sequence)라 한다.
 
-<img src="">
+<p align="center">
+    <img src="https://github.com/mulatta/Bioinforamtics-Algorithm-practice/blob/main/images/Chapter%201/DnaA%20box.png" width="298" height="541">
+</p>
 
 정리하자면, 유전체 복제가 시작되는 영역을 찾기 위해서 DnaA box를 찾는 것은 중요하다.
 
