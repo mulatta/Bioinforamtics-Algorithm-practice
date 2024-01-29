@@ -53,13 +53,30 @@
 즉, 단백질 분자가 외부 계의 물리적 힘 - 특히 열 - 에 의해 진동하거나 부유하는 brownian motion을 통해 돌아다니다가, 적절한 DNA 서열과 유효충돌이 일어나야 상호작용이 일어나는 것이다. 
 
 따라서, 우리는 다음과 같은 가설을 세울 수 있다. 
-> 1. DnaA box가 많을수록 DnaA protein과의 유효충돌 횟수가 커진다.
+> **1. DnaA box가 많을수록 DnaA protein과의 유효충돌 횟수가 커진다.**
 
-> 2. DnaA box가 많이 존재한다면, 이 서열들 중 일부에 변이가 일어나도 결합을 방해하는 데에 미치는 영향을 줄일 수 있다.
+> **2. DnaA box가 많이 존재한다면, 이 서열들 중 일부에 변이가 일어나도 결합을 방해하는 데에 미치는 영향을 줄일 수 있다.**
 
-- **k-mer**: 길이가 k인 문자열
+그러므로, 위 가설에 따르면 문제는 반복되는 특정 서열을 찾는 것으로 귀결된다.
+하지만 여전히 우리는 이 *특정 서열* 의 길이가 어느정도인지 알지 못하기 때문에, 임의의 길이를 가지는 특정 서열을 k-mer로 정의한다.
 
-![pattern](1A.%20PatternCount.py)
+ ***k-mer***: 길이가 k인 문자열
+
+### Problem
+- Input: 전체 문자열 Text, Text에서 찾으려는 문자열 Pattern
+- Output: Text에서 등장하는 Pattern의 횟수
+
+### Pseudo-code
+```
+PatternCount(Text, Pattern)
+count <- 0
+for i <- 0 to |Text| - |Pattern|
+    if Text(i, |Pattern|) == Pattern
+        count <-- count + 1
+return count
+```
+
+### [Implementation](./1A.%20PatternCount.py)
 
 ## 1B. 빈번한 단어 문제
 
