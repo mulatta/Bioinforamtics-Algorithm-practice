@@ -12,16 +12,28 @@
 
 ## 목차
  #### 본문
- - [1A. 단어 세기](./1A.%20PatternCount.ipynb)
- - [1B. 빈번한 단어 문제](./1B.%20FrequentWords.ipynb)
- - [1C. 역상보 문제](./1C.%20ReverseComplement.ipynb)
- - [1D. 패턴 일치 문제](./1D.%20PatternOccurrence.ipynb)
- - [1E. 군집 찾기 문제](./1E.%20FindClumps.ipynb)
- - [1F. 최소 비대칭 문제](./1F.%20MinimizeSkew.ipynb)
- - [1G. 해밍 거리 문제](./1G.%20HammingDistance.ipynb)
- - [1I. 대략적인 패턴 일치 문제](./1H.%20NäivePatternMatiching.ipynb)
-     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./1I-Ex.%20ApproximatePatternCount.ipynb)
- - [1J. 미스매치와 역상보의 빈번한 단어 문제](./1J.%20MostFrequentPseudoPatternwithComplements.ipynb)
+ - [1A. 단어 세기](#1a-단어-세기) | [code](./1A.%20PatternCount.ipynb)
+ - [1B. 빈번한 단어 문제](#1b-빈번한-단어-문제) | [code](./1B.%20FrequentWords.ipynb)
+ - [1C. 역상보 문제](#1c-역상보-문제) | [code](./1C.%20ReverseComplement.ipynb)
+ - [1D. 패턴 일치 문제](#1d-패턴-일치-문제) | [code](./1D.%20PatternOccurrence.ipynb)
+ - [1E. 군집 찾기 문제](#1e-군집-찾기-문제) | [code](./1E.%20FindClumps.ipynb)
+ - [1F. 최소 비대칭 문제](#1f-최소-비대칭-문제) | [code](./1F.%20MinimizeSkew.ipynb)
+ - [1G. 해밍 거리 문제](#1g-해밍-거리-문제) | [code](./1G.%20HammingDistance.ipynb)
+ - [1H. 대략적인 패턴 일치 문제](#1h-대략적인-패턴-일치-문제) | [code](./1H.%20NäivePatternMatiching.ipynb)
+ - [1I. 빈번한 단어 문제](#1i-빈번한-단어-문제) | [code](./1I.%20MostFrequentPseudoPattern.ipynb)
+     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](#연습문제-count_dtext-pattern의-구현-및-실행) | [code](./1I-Ex.%20ApproximatePatternCount.ipynb)
+ - [1J. 미스매치와 역상보의 빈번한 단어 문제](#1j-미스매치와-역상보의-빈번한-단어-문제) | [code](./1J.%20MostFrequentPseudoPatternwithComplements.ipynb)
 
 #### 충전소
+## 1A. 단어 세기
+## 1B. 빈번한 단어 문제
+## 1C. 역상보 문제
+## 1D. 패턴 일치 문제
+## 1E. 군집 찾기 문제
+## 1F. 최소 비대칭 문제
+## 1G. 해밍 거리 문제
+## 1H. 대략적인 패턴 일치 문제
+## 1I. 빈번한 단어 문제
+### 연습문제: Count_d(Text, Pattern)의 구현 및 실행
+## 1J. 미스매치와 역상보의 빈번한 단어 문제
 
