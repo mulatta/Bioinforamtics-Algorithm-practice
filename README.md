@@ -3,12 +3,13 @@
 
  책의 구성에 따라, 각 Chapter를 본문과 충전소의 2개 section으로 나누어 학습하였습니다.
 
- 이 Repo에서 다루는 연습문제를 제외한 대부분의 코드들은 [Rosalind Bioinformatics Textbook Track](https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track)의 풀이이며, Rosalind의 다른 문제들은 [Rosalind PS repo](https://github.com/mulatta/Rosalind_PS)에서 다뤄집니다.
+ 이 Repository에서는 [Rosalind Bioinformatics Textbook Track](https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track)의 풀이에 대해 다루며, 상기 내용에 대한 상세한 기록은 [블로그](https://mulatta.github.io/bioinformatics-review)에서 다룹니다.
  
+ Rosalind의 기타 문제들에 대한 풀이는 [Rosalind PS repo](https://github.com/mulatta/Rosalind_PS)에서 다뤄집니다.
 
 ## Guidelines
  ### About this Page
- - 이 페이지에서는 Reop 이용 가이드와 목차만 확인이 가능합니다.
+ - 이 페이지에서는 이용 가이드와 목차만 확인이 가능합니다.
  - 각 **Chapter 페이지에는 학습 내용에 대한 전체 흐름**을, **본문 및 충전소 페이지에서는 코드에 대한 구현 흐름**을 서술했습니다.
  ### For Users
  - **step-by-step**: 각 *Chapter page*의 내용을 따라가면서 코드를 확인하실 것을 권장드립니다.

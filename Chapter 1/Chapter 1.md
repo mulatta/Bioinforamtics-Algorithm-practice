@@ -12,6 +12,17 @@
 
 ## 목차
  #### 본문
+ <table width="100%">
+  <tr>
+    <td align="left">
+      <a href="link-to-previous-page">← Previous Page</a>
+    </td>
+    <td align="right">
+      <a href="link-to-next-page">Next Page →</a>
+    </td>
+  </tr>
+</table>
+
  - [1A. 단어 세기](./1A.%20PatternCount.ipynb)
  - [1B. 빈번한 단어 문제](./1B.%20FrequentWords.ipynb)
  - [1C. 역상보 문제](./1C.%20ReverseComplement.ipynb)
@@ -69,7 +80,7 @@
  ---
  ```c
  Text(i, k) := i-th k-mer in the Text
- PatternCount(Text, Pattern):
+ PatternCount(Text, Pattern):
 	input: Text, Pattern
 	output: the number of occurence of k-mer in the Text
 
