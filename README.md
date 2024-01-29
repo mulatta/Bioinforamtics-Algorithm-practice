@@ -16,7 +16,7 @@
  - **Only Codes**: 목차-본문/충전소의 각 코드만 따라가시면 됩니다.
  ### Another Issues
  - 본문이나 코드 내용 상의 오류에 대한 문의는 [Issues](https://github.com/mulatta./issues) 페이지를 이용 부탁드립니다.
- - 개별적인 contact은 [메인 페이지](https://mulatta.github.io/about)를 확인 부탁드립니다.
+ - 개별적인 contact은 [블로그 메인 페이지](https://mulatta.github.io/about)를 확인 부탁드립니다.
 
 ## 목차
  #### 본문
