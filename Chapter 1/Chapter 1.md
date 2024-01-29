@@ -78,11 +78,10 @@
 	if Text(i, |Pattern|) == Pattern 
 		count <- count + 1
 	return count
-	
  ```
  ---
  1. 주어진 문자열 Text의 모든 문자열을 각각 시작점으로 삼는다
  2. 각 시작 문자열로부터 Pattern의 길이만큼의 k-mer가 Pattern과 동일한지 확인한다
  3. 즉, 각 시작 문자열이 pattern을 형성한다면 pattern의 수를 세는 변수 count를 1 증가시킨다.
- 
+
 ### 빈번한 단어 문제
