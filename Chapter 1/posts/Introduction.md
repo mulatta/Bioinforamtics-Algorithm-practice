@@ -11,7 +11,7 @@
 5. **유사한 문자열**의 등장 빈도는 어떠한가?
 
 ## 목차
- #### [서론](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/Introduction.md)
+ #### [서론](#서론)
  #### 본문
  - [1A. 단어 세기](./1A.%20PatternCount.md) | [code](/Bioinforamtics-Algorithm-practice/Chapter%201/codes/FrequentWords.py)
  - [1B. 빈번한 단어 문제](./1B.%20FrequentWords.md) | [code](/Bioinforamtics-Algorithm-practice/Chapter%201/codes/FrequentWords.py)
