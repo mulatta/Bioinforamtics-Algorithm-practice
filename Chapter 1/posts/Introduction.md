@@ -50,15 +50,13 @@
 
 하지만, 유전체에서 이러한 DnaA box를 생물학자들이 직접 실험을 통해 찾는 것은 경제적/시간적으로 큰 비용이 부담되기 때문에 몇가지 조건들을 통해 컴퓨터 과학자들이 이를 찾아내는 것이 효율적이다.
 
-그러므로, 우리는 이번 장에서 DnaA box라는 암호를 찾는 방법에 대해서 논의해본다.
+그러므로, 우리는 이번 장에서 DnaA box라는 암호를 찾는 방법에 대해서 논의해본다.  
 
-<table width="100%">
-  <tr>
-    <td align="left">
-      <a href="Bioinforamtics-Algorithm-practice/README.md">← Main Page</a>
-    </td>
-    <td align="right">
-      <a href="./1A. PatternCount.md">1A. 단어 세기 →</a>
-    </td>
-  </tr>
-</table>
+<div align="left">
+    <a href="https://github.com/mulatta/Bioinforamtics-Algorithm-practice/tree/main">← Main Page</a>
+</div>
+
+<div align="right">
+    <a href="./1A. PatternCount.md">1A. 단어 세기 →</a>
+</div>
+

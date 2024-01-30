@@ -19,8 +19,8 @@
  - 그 외 기타 contact은 [e-mail](mailto:lsw1167@gmail.com) 로 부탁드립니다.
 
 ## 목차
- #### [서론](./Chapter%201/posts/Introduction.md)
- #### 본문
+ ### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/posts/Introduction.md)
+ ### 본문
  - [1A. 단어 세기](./Chapter%201/posts/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
  - [1B. 빈번한 단어 문제](./Chapter%201/posts/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
  - [1C. 역상보 문제](./Chapter%201/posts/1C.%20ReverseComplement.md) | [code](./Chapter%201/ReverseComplement.py)
@@ -33,4 +33,12 @@
      - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/1I-Ex.%20ApproximatePatternCount.md) | [code](./Chapter%201/ApproximatePatternCount.py)
  - [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/posts/1J.%20MostFrequentPseudoPatternWithComplements.md) | [code](./Chapter%201/MostFrequentPseudoPatternwithComplements.py)
  
- #### 충전소
+ ### 충전소
+
+ <table width="100%">
+  <tr>
+    <td align="right">
+      <a href="./Chapter 1/posts/Introduction.md">Chapter 1 Introduction →</a>
+    </td>
+  </tr>
+</table>
