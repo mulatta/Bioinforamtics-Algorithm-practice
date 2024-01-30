@@ -35,10 +35,6 @@
  
  ### 충전소
 
- <table width="100%">
-  <tr>
-    <td align="right">
-      <a href="./Chapter 1/posts/Introduction.md">Chapter 1 Introduction →</a>
-    </td>
-  </tr>
-</table>
+<div align="right">
+    <a href="./Chapter 1/posts/Introduction.md">Chapter 1 Introduction →</a>
+</div>
