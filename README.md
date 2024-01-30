@@ -19,7 +19,7 @@
  - 개별적인 contact은 [블로그 메인 페이지](https://mulatta.github.io/about)를 확인 부탁드립니다.
 
 ## 목차
- #### [서론](#서론)
+ #### [서론](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/Introduction.md)
  #### 본문
  - [1A. 단어 세기](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
  - [1B. 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
