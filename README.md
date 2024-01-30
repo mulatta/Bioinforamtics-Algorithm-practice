@@ -36,5 +36,5 @@
  ### 충전소
 
 <div align="right">
-    <a href="./Chapter 1/posts/Introduction.md">Chapter 1 Introduction →</a>
+    <a href="./Chapter 1/posts/Introduction.md">Chapter 1. Introduction →</a>
 </div>
