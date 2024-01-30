@@ -1,13 +1,7 @@
-# 텍스트 파일을 읽어서 각 line을 lines 변수에 리스트로 저장
-path = "rosalind_ba1f.txt"
-fileBuffer = open(path, 'r')
-genome = fileBuffer.readline().strip()
-
 # skewness를 계산한 뒤 최소가 되는 모든 인덱스를 리스트로 반환하는 함수
-def minimizeSkew(genome):
+def MinSkew(genome):
     # 변수 선언
     skew, minSkew = [], []
-    minValue = 9999
 
     # 가중치 값을 저장하는 dictionary
     weight = {'G':1, 'C':-1, 'A':0, 'T':0}
@@ -25,8 +19,12 @@ def minimizeSkew(genome):
     
     return minSkew
 
-for result in minimizeSkew(genome):
-    print(result, end=' ')
+# 구현 함수 실행
+if __name__ == '__main__':
+    path = "Bioinforamtics-Algorithm-practice/Chapter 1/rosalind_ba1f.txt"
 
-# 열었던 파일 닫기
-fileBuffer.close()
+    with open(path, 'r') as f:
+        genome = f.readline().strip()
+        
+        for result in MinSkew(genome):
+            print(result, end=' ')

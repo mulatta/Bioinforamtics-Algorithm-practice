@@ -8,38 +8,10 @@
 # - 따라서, Näive 한 방법으로, 가능한 모든 k-mer를 형성한 뒤, 각각의 *k-mer*가 가지는 유사한 모티프가 등장하는 횟수를 구하는 방식으로 접근할 수 있다.
 # 
 # ---
+
 # 이전 문제들에서 다룬 함수들 
-
-# 길이가 동일한 두 문자열이 얼마나 다른지 계산함
-def HammingDistance(str1, str2):
-    
-    # 비교하고자 하는 두 문자열의 길이와 결과로 반환할 Mismatch 수를 변수로 선언
-    strlen = len(str1)
-    mismatch = 0
-    
-    # i를 포인터로 하여 두 문자열 각각에서 다른지 비교
-    for i in range(strlen):
-        if str1[i] != str2[i]: mismatch += 1
-
-    return mismatch
-
-# 주어진 전체 문자열 Text에서 d개 이하의 mismatch만 허용하는 유사 motif(pattern)를 찾아 그 motif의 "수"를 반환
-def ApproximatePatternCount(text, pattern, d):
-    # 결과로 반환할 변수 선언
-    count = 0
-
-    # 주어진 text에서 pattern을 찾을 수 있는 범위를 모두 순회
-    for i in range(len(text) - len(pattern) + 1):
-
-        # 유사 pattern의 후보로 ppattern을 text로부터 slicing 해옴
-        ppattern = text[i:i+len(pattern)]
-
-        # ppattern과 원래 pattern의 HammingDistance를 계산하고, d보다 작다면 count
-        if HammingDistance(pattern, ppattern) <= d:
-            count += 1
-    
-    return count
-
+from HammingDistance import HammingDistance
+from ApproximatePatternCount import ApproximatePatternCount
 
 # ---
 # 
@@ -93,7 +65,7 @@ def MostFrequentPseudoPattern(text, k, d):
 
 # 구현 함수 실행
 
-path = "rosalind_ba1i.txt"
+path = "Bioinforamtics-Algorithm-practice/Chapter 1/rosalind_ba1i.txt"
 
 with open(path, 'r') as f:
     Text = f.readline().strip()

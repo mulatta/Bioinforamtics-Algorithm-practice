@@ -19,19 +19,18 @@
  - 개별적인 contact은 [블로그 메인 페이지](https://mulatta.github.io/about)를 확인 부탁드립니다.
 
 ## 목차
- ### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/Chapter%201.md)
- #### [서론](./Chapter%201/Chapter%201.md#서론)
+ #### [서론](#서론)
  #### 본문
- - [1A. 단어 세기](./Chapter%201/Chapter%201.md#1a-단어-세기) | [code](./Chapter%201/1A.%20PatternCount.py)
- - [1B. 빈번한 단어 문제](./Chapter%201/Chapter%201.md#1b-빈번한-단어-문제) | [code](./Chapter%201/1B.%20FrequentWords.py)
- - [1C. 역상보 문제](./Chapter%201/Chapter%201.md#1c-역상보-문제) | [code](./Chapter%201/1C.%20ReverseComplement.py)
- - [1D. 패턴 일치 문제](./Chapter%201/Chapter%201.md#1d-패턴-일치-문제) | [code](./Chapter%201/1D.%20PatternOccurrence.py)
- - [1E. 군집 찾기 문제](./Chapter%201/Chapter%201.md#1e-군집-찾기-문제) | [code](./Chapter%201/1E.%20FindClumps.py)
- - [1F. 최소 비대칭 문제](./Chapter%201/Chapter%201.md#1f-최소-비대칭-문제) | [code](./Chapter%201/1F.%20MinimizeSkew.py)
- - [1G. 해밍 거리 문제](./Chapter%201/Chapter%201.md#1g-해밍-거리-문제) | [code](./Chapter%201/1G.%20HammingDistance.py)
- - [1H. 대략적인 패턴 일치 문제](./Chapter%201/Chapter%201.md#1h-대략적인-패턴-일치-문제) | [code](./Chapter%201/1H.%20NäivePatternMatiching.py)
- - [1I. 미스매치가 있는 빈번한 단어 문제](./Chapter%201/Chapter%201.md#1i-미스매치가-있는-빈번한-단어-문제) | [code](./Chapter%201/1I.%20MostFrequentPseudoPattern.py)
-     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](#연습문제-count_dtext-pattern의-구현-및-실행) | [code](./Chapter%201/1I-Ex.%20ApproximatePatternCount.py)
- - [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/Chapter%201.md#1j-미스매치와-역상보의-빈번한-단어-문제) | [code](./Chapter%201/1J.%20MostFrequentPseudoPatternwithComplements.py)
-
-#### 충전소
+ - [1A. 단어 세기](./Chapter%201/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
+ - [1B. 빈번한 단어 문제](./Chapter%201/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
+ - [1C. 역상보 문제](./Chapter%201/1C.%20ReverseComplement.md) | [code](./Chapter%201/ReverseComplement.py)
+ - [1D. 패턴 일치 문제](./Chapter%201/1D.%20PatternOccurrence.md) | [code](./Chapter%201/PatternOccurrence.py)
+ - [1E. 군집 찾기 문제](./Chapter%201/1E.%20FindClumps.md) | [code](./Chapter%201/FindClumps.py)
+ - [1F. 최소 비대칭 문제](./Chapter%201/1F.%20MinSkew.md) | [code](./Chapter%201/MinSkew.py)
+ - [1G. 해밍 거리 문제](./Chapter%201/1G.%20HammingDistance.md) | [code](./Chapter%201/HammingDistance.py)
+ - [1H. 대략적인 패턴 일치 문제](./Chapter%201/1H.%20NäivePatternMatching.md) | [code](./Chapter%201/NäivePatternMatiching.py)
+ - [1I. 미스매치가 있는 빈번한 단어 문제](./Chapter%201/1I.%20MostFrequentPseudoPattern.md) | [code](./Chapter%201/MostFrequentPseudoPattern.py)
+     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/1I-Ex.%20ApproximatePatternCount.md) | [code](./Chapter%201/ApproximatePatternCount.py)
+ - [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/1J.%20MostFrequentPseudoPatternWithComplements.md) | [code](./Chapter%201/MostFrequentPseudoPatternwithComplements.py)
+ 
+ #### 충전소

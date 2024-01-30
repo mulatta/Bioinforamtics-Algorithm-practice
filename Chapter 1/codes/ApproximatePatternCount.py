@@ -7,18 +7,7 @@
 # - 따라서, 어느정도 유사한 서열을 찾는 것은 중요함
 # 
 
-# 길이가 동일한 두 문자열이 얼마나 다른지 계산함
-def HammingDistance(str1, str2):
-    
-    # 비교하고자 하는 두 문자열의 길이와 결과로 반환할 Mismatch 수를 변수로 선언
-    strlen = len(str1)
-    mismatch = 0
-    
-    # i를 포인터로 하여 두 문자열 각각에서 다른지 비교
-    for i in range(strlen):
-        if str1[i] != str2[i]: mismatch += 1
-
-    return mismatch
+from HammingDistance import HammingDistance
 
 # 주어진 전체 문자열 Text에서 d개 이하의 mismatch만 허용하는 유사 motif(pattern)를 찾아 그 motif의 "수"를 반환
 def ApproximatePatternCount(text, pattern, d):
@@ -37,13 +26,13 @@ def ApproximatePatternCount(text, pattern, d):
     
     return count
 
-# Textbook의 예제 상황 변수 선언
-Text = "AACAAGCATAAACATTAAAGAG"
-Pattern = "AAAAA"
+if __name__ == '__main__':
+    # Textbook의 예제 상황 변수 선언
+    Text = "AACAAGCATAAACATTAAAGAG"
+    Pattern = "AAAAA"
 
-# 책에서 주어진대로, 1개의 mismatch를 허용하는 유사 motif는 다음과 같이 찾을 수 있다.
-print(ApproximatePatternCount(Text, Pattern, 1))
+    # 책에서 주어진대로, 1개의 mismatch를 허용하는 유사 motif는 다음과 같이 찾을 수 있다.
+    print(ApproximatePatternCount(Text, Pattern, 1))
 
-# 연습 문제의 구현 및 풀이
-print(ApproximatePatternCount(Text, Pattern, 2))
-
+    # 연습 문제의 구현 및 풀이
+    print(ApproximatePatternCount(Text, Pattern, 2))
