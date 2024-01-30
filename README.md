@@ -21,16 +21,16 @@
 ## 목차
  #### [서론](#서론)
  #### 본문
- - [1A. 단어 세기](./Chapter%201/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
- - [1B. 빈번한 단어 문제](./Chapter%201/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
- - [1C. 역상보 문제](./Chapter%201/1C.%20ReverseComplement.md) | [code](./Chapter%201/ReverseComplement.py)
- - [1D. 패턴 일치 문제](./Chapter%201/1D.%20PatternOccurrence.md) | [code](./Chapter%201/PatternOccurrence.py)
- - [1E. 군집 찾기 문제](./Chapter%201/1E.%20FindClumps.md) | [code](./Chapter%201/FindClumps.py)
- - [1F. 최소 비대칭 문제](./Chapter%201/1F.%20MinSkew.md) | [code](./Chapter%201/MinSkew.py)
- - [1G. 해밍 거리 문제](./Chapter%201/1G.%20HammingDistance.md) | [code](./Chapter%201/HammingDistance.py)
+ - [1A. 단어 세기](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
+ - [1B. 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
+ - [1C. 역상보 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1C.%20ReverseComplement.md) | [code](./Chapter%201/ReverseComplement.py)
+ - [1D. 패턴 일치 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1D.%20PatternOccurrence.md) | [code](./Chapter%201/PatternOccurrence.py)
+ - [1E. 군집 찾기 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1E.%20FindClumps.md) | [code](./Chapter%201/FindClumps.py)
+ - [1F. 최소 비대칭 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1F.%20MinSkew.md) | [code](./Chapter%201/MinSkew.py)
+ - [1G. 해밍 거리 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1G.%20HammingDistance.md) | [code](./Chapter%201/HammingDistance.py)
  - [1H. 대략적인 패턴 일치 문제](./Chapter%201/1H.%20NäivePatternMatching.md) | [code](./Chapter%201/NäivePatternMatiching.py)
- - [1I. 미스매치가 있는 빈번한 단어 문제](./Chapter%201/1I.%20MostFrequentPseudoPattern.md) | [code](./Chapter%201/MostFrequentPseudoPattern.py)
+ - [1I. 미스매치가 있는 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1I.%20MostFrequentPseudoPattern.md) | [code](./Chapter%201/MostFrequentPseudoPattern.py)
      - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/1I-Ex.%20ApproximatePatternCount.md) | [code](./Chapter%201/ApproximatePatternCount.py)
- - [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/1J.%20MostFrequentPseudoPatternWithComplements.md) | [code](./Chapter%201/MostFrequentPseudoPatternwithComplements.py)
+ - [1J. 미스매치와 역상보의 빈번한 단어 문제](/Bioinforamtics-Algorithm-practice/Chapter%201/posts/1J.%20MostFrequentPseudoPatternWithComplements.md) | [code](./Chapter%201/MostFrequentPseudoPatternwithComplements.py)
  
  #### 충전소
