@@ -67,12 +67,13 @@ def MostFrequentPseudoPattern(text, k, d):
 
 path = "Bioinforamtics-Algorithm-practice/Chapter 1/rosalind_ba1i.txt"
 
-with open(path, 'r') as f:
-    Text = f.readline().strip()
-    k, d = map(int,f.readline().strip().split())
+if __name__ == '__main__':
+    with open(path, 'r') as f:
+        Text = f.readline().strip()
+        k, d = map(int,f.readline().strip().split())
 
-    for result in MostFrequentPseudoPattern(Text, k, d):
-        print(result, end=' ')
+        for result in MostFrequentPseudoPattern(Text, k, d):
+            print(result, end=' ')
 
 
 # ### Case 2: 주어진 text에서 k-mer 길이만큼 후보군을 가져온 뒤, d개 이하의 mismatch가 형성된 경우를 만들어 비교
