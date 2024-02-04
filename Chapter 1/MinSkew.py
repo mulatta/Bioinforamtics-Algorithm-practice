@@ -25,6 +25,4 @@ if __name__ == '__main__':
 
     with open(path, 'r') as f:
         genome = f.readline().strip()
-        
-        for result in MinSkew(genome):
-            print(result, end=' ')
+        print(*MinSkew(genome))
