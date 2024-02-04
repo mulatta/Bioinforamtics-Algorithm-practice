@@ -9,27 +9,46 @@
 ## Guidelines
  ### About this Page
  - 이 페이지에서는 이용 가이드와 목차만 확인이 가능합니다.
- - 각 **Chapter 페이지에는 학습 내용에 대한 전체 흐름**을, **본문 및 충전소 페이지에서는 코드에 대한 구현 흐름**을 서술했습니다.
  ### For Users
- - **Concepts**: 목차에 링크된 *Chapter page*의 내용을 따라가면서 코드를 확인하실 것을 권장드립니다.
+ - 각 절의 코드는 한 파일에 연관이 있는 코드 별로 묶어서 업로드 되어 있습니다.
+ - **Concepts**: 목차에 링크된 블로그 *Chapter page*의 내용을 따라가면서 코드를 확인하실 것을 권장드립니다.
  - **Codes**: 목차의 코드를 확인하시면 됩니다.
  ### Another Issues
  - 본문이나 코드 내용 상의 오류에 대한 문의는 [Issues](https://github.com/mulatta./issues) 페이지를 이용 부탁드립니다.
  - 그 외 기타 contact은 [e-mail](mailto:lsw1167@gmail.com) 로 부탁드립니다.
 
 ## 목차
- ### [Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?](./Chapter%201/posts/Introduction.md)
+ ### Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?
  ### 본문
- - [1A. 단어 세기](./Chapter%201/posts/1A.%20PatternCount.md) | [code](./Chapter%201/PatternCount.py)
- - [1B. 빈번한 단어 문제](./Chapter%201/posts/1B.%20FrequentWords.md) | [code](./Chapter%201/FrequentWords.py)
- - [1C. 역상보 문제](./Chapter%201/posts/1C.%20ReverseComplement.md) | [code](./Chapter%201/ReverseComplement.py)
- - [1D. 패턴 일치 문제](./Chapter%201/posts/1D.%20PatternOccurrence.md) | [code](./Chapter%201/PatternOccurrence.py)
- - [1E. 군집 찾기 문제](./Chapter%201/posts/1E.%20FindClumps.md) | [code](./Chapter%201/FindClumps.py)
- - [1F. 최소 비대칭 문제](./Chapter%201/posts/1F.%20MinSkew.md) | [code](./Chapter%201/MinSkew.py)
- - [1G. 해밍 거리 문제](./Chapter%201/posts/1G.%20HammingDistance.md) | [code](./Chapter%201/HammingDistance.py)
- - [1H. 대략적인 패턴 일치 문제](./Chapter%201/1H.%20NäivePatternMatching.md) | [code](./Chapter%201/NäivePatternMatiching.py)
- - [1I. 미스매치가 있는 빈번한 단어 문제](./Chapter%201/posts/1I.%20MostFrequentPseudoPattern.md) | [code](./Chapter%201/MostFrequentPseudoPattern.py)
-     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/1I-Ex.%20ApproximatePatternCount.md) | [code](./Chapter%201/ApproximatePatternCount.py)
- - [1J. 미스매치와 역상보의 빈번한 단어 문제](./Chapter%201/posts/1J.%20MostFrequentPseudoPatternWithComplements.md) | [code](./Chapter%201/MostFrequentPseudoPatternwithComplements.py)
+ - [1A. PatternCount](https://rosalind.info/problems/ba1a/) | [code](./Chapter%201/PatternInText.py)
+ - [1B. FrequentWords](https://rosalind.info/problems/ba1b/) | [code](./Chapter%201/FrequentWords.py)
+ - [1C. ReverseComplement](https://rosalind.info/problems/ba1c/) | [code](./Chapter%201/ReverseComplement.py)
+ - [1D. findPatternIndices](https://rosalind.info/problems/ba1d/) | [code](./Chapter%201/PatternInText.py)
+ - [1E. FindClumps](https://rosalind.info/problems/ba1e/) | [code](./Chapter%201/FindClumps.py)
+ - [1F. MinimizeSkew](https://rosalind.info/problems/ba1f/) | [code](./Chapter%201/MinSkew.py)
+ - [1G. HammingDistance](https://rosalind.info/problems/ba1g/) | [code](./Chapter%201/HammingDistance.py)
+ - [1H. ApproximatePatternCount](https://rosalind.info/problems/ba1h/) | [code](./Chapter%201/FrequentWords.py)
+ - [1I. findMostFrequentPatternWithMismatches](https://rosalind.info/problems/ba1i/) | [code](./Chapter%201/FrequentWords.py)
+     - [연습문제: Count_d(Text, Pattern)의 구현 및 실행](./Chapter%201/PatternInText.py)
+ - [1J. findMostFrequentPatternWithMismatches](https://rosalind.info/problems/ba1j/) | [code](./Chapter%201/FrequentWords.py)
  
  ### 충전소
+ - 빈도 배열
+    - [1K. ComputingFrequencies](https://rosalind.info/problems/ba1k/) | [code](./Chapter%201/ComputeFreq.py)
+    - [FasterFrequentWords](./Chapter%201/FrequentWords.py)
+- 패턴과 숫자를 서로 변환하기
+    - [1L. PatternToNumber](https://rosalind.info/problems/ba1l/) | [code](./Chapter%201/PatternConversion.py)
+    - [1M. NumberToPattern](https://rosalind.info/problems/ba1m/) | [code](./Chapter%201/PatternConversion.py)
+- 정렬을 사용해 빈번한 단어 찾기
+    - [FindingFrequentWordsBySorting](./Chapter%201/FrequentWords.py)
+- 군집 찾기 문제 해결
+    - [ClumpFinding](./Chapter%201/FindClumps.py)
+    - [BetterClumpFinding](./Chapter%201/FindClumps.py)
+- 미스매치를 포함한 자주 나오는 단어 문제 해결
+    - [ComputingFrequenciesWithMismatches](./Chapter%201/ComputeFreq.py)
+- 문자열 이웃 생성
+    - [ImmediateNeighbors](./Chapter%201/Neighbors.py)
+    - [1N. Neighbors](https://rosalind.info/problems/ba1n/) | [code](./Chapter%201/Neighbors.py)
+    - [IterativeNeighbors](./Chapter%201/Neighbors.py)
+- 정렬로 미스매치를 포함한 빈번한 단어 찾기
+    - [FindingFrequentWordsWithMismatchesBySorting](./Chapter%201/FrequentWords.py)
