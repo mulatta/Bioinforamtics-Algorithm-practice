@@ -1,6 +1,6 @@
 ---
 name: "[BINU] Chapter review"
-about: Chapter (num) review
+about: Issues for chapter review
 title: "[BINU] Chapter review"
 labels: study
 assignees: mulatta
