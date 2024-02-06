@@ -26,17 +26,12 @@ assignees: mulatta
 - Challenges: 에필로그 및 충전소의 도전 문제 구현 (해당 월 4주차 - 마지막 주차까지)
 
 # 작성 양식
-- 첫 줄에 [Question] 또는 [Discussion] 표기 후 내용에 대한 간략한 1줄 제목
-- 두번째 줄에 질문 및 토의 내용
-
-## [Question] 예시
-[Question] DnaA box와 DnaA protein의 관계 및 작용 기전  
-책 35p.에서 DnaA box에 대한 설명이 나옵니다. DnaA box와 DnaA protein 간의 차이점이 무엇인가요? 두 분자 간의 상호작용이 어떻게 일어나는지 궁금합니다.
-
-## [Discussion] 예시
-[Discussion] Frequent Pattern 찾기의 반복성 및 개선 방안에 대한 고찰  
-71p. FasterFrequentWords 함수 구현에서 더 빠른 방법을 제시하고 있습니다. 그런데 3-mer 부터 5-mer까지의 Frequent Pattern을 찾는 상황에서, 4-mer, 5-mer를 찾을 때 3-mer의 Frequent pattern이 답을 도출하는 데에 도움이 될 수 있지 않을까요? 
-이를테면 3-mer pattern을 기억해두면, 3-mer pattern에서 하나의 문자열이 더 추가된 4-mer pattern을 찾는 데에 더 도움이 될 수 있을 것 같습니다.
+- 현재 repository의 [Discusison section](https://github.com/mulatta/Bioinforamtics-Algorithm-practice/discussions)에 작성
+- 질문의 경우 Q&A로,  시사점이나 개선점은 Idea, 그 외 두 항목에 해당하지 않는 경우는 General로 글 작성
+- **제목은 [BINU]를 앞에 붙이고 작성**하며, 글 내용에는 반드시 어느 부분에서 나온 질문/토의인지 명시
+- 즉, _책의 경우 페이지와 내용, 코드의 경우 어느 코드의 몇번째 라인인지_ 명시
+- **_글 마지막 줄에는 반드시 해당 주체 review를 reference 할 것_**
+-  [작성 예시](https://github.com/mulatta/Bioinforamtics-Algorithm-practice/discussions/9) 참조
 
 # 목표 기한
 - Question / Discussion: issues page가 열린 뒤로 *주기적으로 댓글*을 달면 됩니다.
