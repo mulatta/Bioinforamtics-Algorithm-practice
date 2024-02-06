@@ -1,7 +1,7 @@
 ---
 name: "[BINU] Challenges in Chapter"
 about: Challenges in Chapter
-title: "[BINU]"
+title: "[BINU] Challenges in Chapter"
 labels: study
 assignees: mulatta
 ---
