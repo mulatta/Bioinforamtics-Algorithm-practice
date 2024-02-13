@@ -1,8 +1,8 @@
 from PatternInText import PatternCount, ApproximatePatternCount
 from PatternConversion import PattenToNumber, NumberToPattern
 from HammingDistance import HammingDistance
-from ReverseComplement import RevComp
-from ComputeFreq import ComputeFreq
+from ReverseComplement import Complement
+from ComputeFreq import ComputeFreq, makePattern
 from Neighbors import Neighbors
 
 # 주어진 text에서 특정 words의 빈도수를 계산하여 빈도수가 가장 높은 k-mer를 기록하고 반환하는 함수
@@ -31,12 +31,12 @@ def FrequentWords(text, k):
     # 중복을 제거하기 위해 set 자료구조의 특성 이용
     FrequentPattern = set(FrequentPattern)
 
-    return FrequentPattern
+    return FrequentPattern, maxCount
 
 # 가장 빈번한 단어를 더 빨리 찾는 방법
 def FasterFrequentWords(text, k):
     # 가장 빈도가 높은 pattern(words)을 저장할 리스트 선언
-    FreqWords = []
+    FreqWords = set()
 
     # 주어진 text에서 등장하는 k-mer의 빈도수를 저장할 리스트 초기화
     FreqArr = ComputeFreq(text, k)
@@ -45,9 +45,12 @@ def FasterFrequentWords(text, k):
     maxCount = max(FreqArr)
 
     # FreqArr에 저장된 등장 빈도수 중 최대값인 경우의 인덱스를 찾고, 이에 해당하는 pattern만 FreqWords에 저장
-    FreqWords.extend(NumberToPattern(idx, k) for idx in range(len(FreqArr)) if FreqArr[idx] == maxCount)
+    for idx in range(len(FreqArr)):
+        if FreqArr[idx] == maxCount:
+            FreqWords.add(NumberToPattern(idx, k))
 
-    return FreqWords
+    # 최대 등장 횟수를 확인하기 위해 maxCount도 반환하도록 수정
+    return FreqWords, maxCount
 
 # ## Mismatch가 있는 빈번한 단어 문제
 # 
@@ -71,28 +74,6 @@ def FasterFrequentWords(text, k):
     # 
     # ---
 
-# 입력 k에 대해 가능한 모든 k-mer 조합을 리스트로 반환하는 함수
-def makePattern(curPatterns, k):
-    # 결과를 반환할 리스트 초기화
-    result = []
-
-    # 추가할 염기의 순서를 지정하는 리스트 초기화
-    baseOrder = ['A', 'T', 'G', 'C']
-
-    if k == 1: return curPatterns
-    
-    elif k > 1:
-    
-        # 현재 시점의 curPatterns에서 하나를 꺼내 각각 A, T, G, C를 붙인 뒤 result에 저장
-        for subPattern in curPatterns:
-            for i in range(len(baseOrder)):
-                result.append(subPattern+baseOrder[i])
-
-        # 한번의 step이 끝나면 감소된 k로 재귀 호출
-        result = makePattern(result, k-1)
-
-        return result
-
 # 입력 문자열 text에서 threshold 이하의 변이를 허용하는 모든 가능한 pattern의 시작 위치를 리스트로 반환하는 함수
 def findPatternWithMismatches(text, pattern, threshold):
     # 결과 변수를 저장할 리스트 선언
@@ -105,7 +86,7 @@ def findPatternWithMismatches(text, pattern, threshold):
     return pseudoMotifIdx
 
 # d개 이하의 mismatches를 허용하는 가장 빈번한 pattern을 반환하는 함수, reverse = True이면 역상보 서열까지 frequency에 포함한 가장 빈번한 pattern을 반환
-def findMostFrequentPatternWithMismatches(text, k, d, reverse = False):
+def findMostFrequentPatternWithMismatches(text, k, variations, reverse = False):
     # 등장 횟수를 저장하는 count list, ppattern의 서열정보를 입력할 pList 초기화
     count, pList = [], []
     
@@ -117,22 +98,23 @@ def findMostFrequentPatternWithMismatches(text, k, d, reverse = False):
 
         # 생성된 후보 k-mer를 하나씩 고려(Brute-force)
         for kmer in candidateKmer:
-            count.append(ApproximatePatternCount(text, kmer, d))
+            count.append(ApproximatePatternCount(text, kmer, variations))
 
     # reverse complement를 고려하는 경우, 해당 서열과 그 서열의 역상보 서열의 빈도수 합을 결과로 반환
     else:
         # 생성된 후보 k-mer를 하나씩 고려(Brute-force)
         for kmer in candidateKmer:
-            count.append(ApproximatePatternCount(text, kmer, d) + ApproximatePatternCount(text, RevComp(kmer), d))
+            count.append(ApproximatePatternCount(text, kmer, variations) + ApproximatePatternCount(text, Complement(kmer, True), variations))
 
     # count에서 최대값을 가질 때 pattern을 pList에 저장
-    pList.extend(candidateKmer[i] for i in range(len(count)) if count[i] == max(count))
+    maxCount = max(count)
+    pList.extend(candidateKmer[i] for i in range(len(count)) if count[i] == maxCount)
     
     # 중복값 제거
     pList = set(pList)
 
-    # 저장된 인덱스가 나타내는 pattern을 리스트로 반환
-    return pList
+    # 저장된 인덱스가 나타내는 pattern을 리스트로 반환, maxCount를 반환하도록 수정
+    return pList, maxCount
 
 # ### Case 2: 주어진 text에서 k-mer 길이만큼 후보군을 가져온 뒤, d개 이하의 mismatch가 형성된 경우를 만들어 비교
 
@@ -162,11 +144,11 @@ def FrequentWordsbySorting(text, k):
     # 최대값만큼 등장한 pattern을 저장
     FreqPattern.extend(NumberToPattern(patIdx[idx], k) for idx in range(len(text) - k + 1) if count[idx] == maxCount)
 
-    return FreqPattern
+    return FreqPattern, maxCount
 
 
 # d개의 mismatch를 허용할 때의 pattern 중 가장 빈번하게 등장하는 것들을 정렬을 통해 구한 뒤 반환하는 함수
-def findFrequentWordsWithMismatchesBySorting(text, k, d):
+def findFrequentWordsWithMismatchesBySorting(text, k, variations):
     # 입력된 text에서 가능한 모든 pattern(mismatches 허용)을 for-loop을 따라 중복을 허용하여 순차적으로 저장하는 리스트 초기화
     neighbors = []
     
@@ -177,7 +159,7 @@ def findFrequentWordsWithMismatchesBySorting(text, k, d):
     for idx in range(len(text) - k + 1):
     
         # k-mer를 순회하면서 해당 k-mer에서 허용 가능한 모든 pattern을 저장
-        neighbors.extend(Neighbors(text[idx:idx+k], d))
+        neighbors.extend(Neighbors(text[idx:idx+k], variations))
 
     # 저장된 k-mer들을 하나씩 순회하며 각각을 index와 count 배열에 저장
     index = [0 for _ in range(len(neighbors))]
@@ -202,7 +184,23 @@ def findFrequentWordsWithMismatchesBySorting(text, k, d):
         if count[idx] == maxCount:
             freqPattern.add(NumberToPattern(index[idx], k))
     
-    return freqPattern
+    return freqPattern, maxCount
+
+# 상위 top개의 가장 빈번한 pattern을 dictionary로 반환하는 함수
+def FrequentDict(text, k, variations=0, top=10):
+    # 반환 딕셔너리 변수 초기화
+    FreqDict = dict()
+    
+    # 상위 top 개의 빈도를 가져옴
+    FreqArr = ComputeFreq(text, k, variations)
+    TopFreq = FreqArr.sort()[:top]
+    
+    # 상위 top개의 빈도 수를 key로, 해당 pattern을 value로 dictionary 생성
+    for freq in TopFreq:
+        FreqDict[freq] = NumberToPattern()
+    
+    return FreqDict
+
 
 
 # 구현 함수 실행
@@ -222,20 +220,20 @@ if __name__ == '__main__':
     with open(path2, 'r') as f:
         Pattern = f.readline().strip()
         Text = f.readline().strip()
-        d = int(f.readline().strip())
-        print(*findPatternWithMismatches(Text, Pattern, d))
+        variations = int(f.readline().strip())
+        print(*findPatternWithMismatches(Text, Pattern, variations))
 
     # 1I solution
     with open(path3, 'r') as f:
         Text = f.readline().strip()
-        k, d = map(int,f.readline().strip().split())
-        print(*findMostFrequentPatternWithMismatches(Text, k, d))
+        k, variations = map(int,f.readline().strip().split())
+        print(*findMostFrequentPatternWithMismatches(Text, k, variations))
     
     # 1J solution
     with open(path4, 'r') as f:
         Text = f.readline().strip()
-        k, d = map(int,f.readline().strip().split())
-        print(*findMostFrequentPatternWithMismatches(Text, k, d, True))
+        k, variations = map(int,f.readline().strip().split())
+        print(*findMostFrequentPatternWithMismatches(Text, k, variations, True))
     
     # Textbook 71p. pseudo-code implementation
     with open(path1, 'r') as f:
@@ -252,5 +250,5 @@ if __name__ == '__main__':
     # Textbook 82-83p. pseudo-code implementation
     with open(path3, 'r') as f:
         Text = f.readline().strip()
-        k, d = map(int,f.readline().strip().split())
-        print(*findFrequentWordsWithMismatchesBySorting(Text, k, d))
+        k, variations = map(int,f.readline().strip().split())
+        print(*findFrequentWordsWithMismatchesBySorting(Text, k, variations))

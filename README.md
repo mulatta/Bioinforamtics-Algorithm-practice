@@ -20,9 +20,9 @@
 ## 목차
  ### Chapter 1. DNA 복제는 유전체의 어디서부터 시작되는가?
  ### 본문
- - [1A. PatternCount](https://rosalind.info/problems/ba1a/) | [code](./Chapter%201/PatternInText.py)
- - [1B. FrequentWords](https://rosalind.info/problems/ba1b/) | [code](./Chapter%201/FrequentWords.py)
- - [1C. ReverseComplement](https://rosalind.info/problems/ba1c/) | [code](./Chapter%201/ReverseComplement.py)
+ - [1A. PatternCount](https://mulatta.github.io/posts/1A-PatternCount/) | [code](./Chapter%201/PatternInText.py)
+ - [1B. FrequentWords](https://mulatta.github.io/posts/1B-FrequentWords/) | [code](./Chapter%201/FrequentWords.py)
+ - [1C. ReverseComplement](https://mulatta.github.io/posts/1C-ReverseComplement/) | [code](./Chapter%201/ReverseComplement.py)
  - [1D. findPatternIndices](https://rosalind.info/problems/ba1d/) | [code](./Chapter%201/PatternInText.py)
  - [1E. FindClumps](https://rosalind.info/problems/ba1e/) | [code](./Chapter%201/FindClumps.py)
  - [1F. MinimizeSkew](https://rosalind.info/problems/ba1f/) | [code](./Chapter%201/MinSkew.py)
